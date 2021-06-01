@@ -1,0 +1,171 @@
+@media only screen and (max-width: 480px) {
+  body,
+  main {
+    width: 100%;
+  }
+
+  section {
+    padding: 25px 0;
+  }
+
+  header {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  #restaurants {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ham-icon {
+    display: block;
+    color: #e1701a;
+    margin-top: 15px;
+    font-size: 24px;
+  }
+
+  .app-logo {
+    display: none;
+  }
+
+  .nav-wrapper .main-nav ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav ul {
+    list-style: none;
+  }
+
+  .mobile-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .app-logo-mobile {
+    display: block;
+    width: 70px;
+    height: auto;
+  }
+
+  .nav-wrapper .nav-mobile ul li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-mobile li {
+    padding: 20px;
+    position: relative;
+  }
+
+  .hero-text-box {
+    font-size: 85%;
+    width: 100%;
+    top: 35%;
+    position: relative;
+  }
+
+  .about-wrapper {
+    display: block;
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row,
+  .hero-text-box {
+    padding: 0 4%;
+  }
+
+  header {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .ham-icon {
+    display: block;
+    color: #e1701a;
+    margin-top: 15px;
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .app-logo {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+    margin-top: 0;
+  }
+  .nav-wrapper .main-nav ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .app-logo-mobile {
+    display: block;
+    width: 100px;
+    height: auto;
+  }
+
+  .main-nav .nav-mobile ul li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-mobile li {
+    margin: auto;
+    font-size: 95%;
+    padding: 10px;
+  }
+
+  .hero-text-box {
+    font-size: 85%;
+    top: 40%;
+    width: 100%;
+    position: relative;
+  }
+
+  .about-wrapper {
+    display: block;
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+
+  #restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .row,
+  .hero-text-box {
+    padding: 0 4%;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .hero-text-box {
+    width: 100%;
+  }
+}
