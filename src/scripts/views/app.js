@@ -3,10 +3,11 @@ import UrlParser from "../routes/url-parser";
 import routes from "../routes/route";
 
 class App {
-  constructor({ button, drawer, content }) {
+  constructor({ button, drawer, content, body }) {
     this._button = button;
     this._drawer = drawer;
     this._content = content;
+    this._body = body;
 
     this._initialAppShell();
   }
@@ -23,6 +24,13 @@ class App {
     const url = UrlParser.parseActiveUrlWithCombiner();
     const page = routes[url];
     this._content.innerHTML = await page.render();
+    await page.afterRender();
+  }
+
+  async renderNewPage() {
+    const url = UrlParser.parseActiveUrlWithCombiner();
+    const page = routes[url];
+    this._body.innerHTML = await page.render();
     await page.afterRender();
   }
 }

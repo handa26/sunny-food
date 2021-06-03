@@ -73,6 +73,23 @@
   .about-img img {
     width: 100%;
   }
+
+  .restaurant-img {
+    height: 350px;
+  }
+
+  .restaurant-detail__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-detail__menu {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  #favorites {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -147,7 +164,11 @@
   }
 
   #restaurants {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #favorites {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
