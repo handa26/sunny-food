@@ -15,15 +15,20 @@ const app = new App({
 window.addEventListener("hashchange", () => {
   let page = window.location.hash.substring(1, 8);
   const header = document.querySelector("header");
+  const heroWrapper = document.querySelector(".hero-text-box");
   const sectionRestaurantsTitle = document.querySelector(".section-restaurants__title");
+
   if (page === "/detail") {
-    header.style.display = "none";
+    heroWrapper.classList.add("hide-hero-wrapper");
+    header.classList.add("hide-header");
     sectionRestaurantsTitle.style.display = "none";
   } else if (page === "/favori") {
-    header.style.display = "none";
+    heroWrapper.classList.add("hide-hero-wrapper");
+    header.classList.add("hide-header");
     sectionRestaurantsTitle.style.display = "none";
   } else {
-    header.style.display = "block";
+    header.classList.remove("hide-header");
+    heroWrapper.classList.remove("hide-hero-wrapper");
     sectionRestaurantsTitle.style.display = "block";
   }
 

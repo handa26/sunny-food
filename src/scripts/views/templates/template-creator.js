@@ -27,17 +27,17 @@ const restaurantDetail = (restaurant) => `
         <p>⭐️<span>${restaurant.rating}</span></p>
       </div>
     </div>
-    <h3 class="restaurant-detail__name">${restaurant.name}</h3>
+    <h3 class="restaurant-detail__name" tabindex="0">${restaurant.name}</h3>
     <span class="restaurant-detail__location">
       ${restaurant.city} | ${restaurant.address}
     </span>
     <div class="restaurant-detail__wrapper">
-      <div class="restaurant-detail__desc">
+      <div class="restaurant-detail__desc" tabindex="0">
         <h4>Description</h4>
         <p>${restaurant.description}</p>
       </div>
       
-      <div class="restaurant-detail__details">
+      <div class="restaurant-detail__details" tabindex="0">
         <h4>Details</h4>
         <div class="detail-wrapper">
           <div class="cuisines">
@@ -58,7 +58,7 @@ const restaurantDetail = (restaurant) => `
           </div>
         </div>
       </div>
-      <div class="restaurant-detail__menu">
+      <div class="restaurant-detail__menu" tabindex="0">
         <h4>Menu</h4>
         <div class="menu-wrapper">
           <div class="foods">
