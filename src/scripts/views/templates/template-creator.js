@@ -3,7 +3,7 @@ import CONFIG from "../../globals/config";
 const listRestaurantsTemplate = (restaurant) => `
   <div class="box-items" tabindex="0">
     <a href="${`/#/detail/${restaurant.id}`}">
-      <img src="${CONFIG.BASE_IMAGE}${restaurant.pictureId}" alt="${restaurant.name}-restaurant" />
+      <img loading="lazy" src="${CONFIG.BASE_IMAGE}${restaurant.pictureId}" alt="${restaurant.name}-restaurant" />
       <div class="box-content">
         <h3>${restaurant.name}</h3>
         <span class="city">${restaurant.city}</span>
